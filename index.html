@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CRIMSON TRADING COMPANY LIMITED - Sierra Leone's Premier Multi-Sector Conglomerate. Multi-Media Production, TV, Tourism, Agriculture, Procurement, ICT & Sales Promotion.">
+  <meta name="keywords" content="CRIMSON TRADING, Sierra Leone, multi-media, TV production, tourism, agriculture, fisheries, procurement, office equipment, sales promotion, ICT, telecommunications">
+  <meta name="author" content="CRIMSON TRADING COMPANY LIMITED">
+  <meta property="og:title" content="CRIMSON TRADING COMPANY LIMITED | Sierra Leone's Premier Trading Conglomerate">
+  <meta property="og:description" content="Driving development across Sierra Leone through Multi-Media, Tourism, Agriculture, Procurement, ICT & Sales Promotion.">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>CRIMSON TRADING COMPANY LIMITED | Sierra Leone's Premier Trading Conglomerate</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== PRELOADER ===== -->
+<div id="preloader">
+  <div class="loader-content">
+    <div class="loader-crimson"></div>
+    <p class="loader-text">CRIMSON TRADING</p>
+    <p class="loader-sub">Loading Sierra Leone's premier enterprise...</p>
+  </div>
+</div>
+
+<!-- ===== NAVIGATION ===== -->
+<header id="navbar">
+  <div class="nav-container">
+    <a href="#" class="nav-logo">
+      <span class="logo-icon"><i class="fas fa-globe-americas"></i></span>
+      <span class="logo-text">CRIMSON<span class="logo-accent">TRADING</span></span>
+    </a>
+    <nav class="nav-menu" id="navMenu">
+      <ul class="nav-list">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#technology" class="nav-link">Technology</a></li>
+        <li><a href="#global" class="nav-link">Global Reach</a></li>
+        
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-lang">
+        <button class="lang-btn active">EN</button>
+        <span class="lang-divider">|</span>
+        <button class="lang-btn">FR</button>
+      </div>
+    </nav>
+    <div class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO SECTION ===== -->
+<section id="home" class="hero">
+  <div class="hero-bg">
+    <div class="hero-video-fallback">
+      <div class="hero-particles" id="heroParticles"></div>
+      <div class="hero-grid-overlay"></div>
+    </div>
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-badge" data-aos="fade-down" data-aos-delay="100">
+      <i class="fas fa-medal"></i> Sierra Leone's Premier Multi-Sector Conglomerate
+    </div>
+    <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+      faith Development<br>
+      <span class="hero-highlight">Beyond Boundaries.</span>
+    </h1>
+    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="400">
+      CRIMSON TRADING — Empowering Sierra Leone through Multi-Media, Tourism, Agriculture, ICT & Trade.
+    </p>
+    <div class="hero-actions" data-aos="fade-up" data-aos-delay="600">
+      <a href="#services" class="btn btn-primary">
+        Explore Our Sectors <i class="fas fa-arrow-right"></i>
+      </a>
+      <a href="#contact" class="btn btn-outline">
+        <i class="fas fa-handshake"></i> Partner With Us
+      </a>
+    </div>
+
+    <div class="hero-stats" data-aos="fade-up" data-aos-delay="800">
+      <div class="stat-item">
+        <span class="stat-number" data-count="7">0</span>
+        <span class="stat-plus">+</span>
+        <span class="stat-label">Business Sectors</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number" data-count="16">0</span>
+        <span class="stat-plus">+</span>
+        <span class="stat-label">Years of Excellence</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number" data-count="100">0</span>
+        <span class="stat-plus">%</span>
+        <span class="stat-label">Commitment to Sierra Leone</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll-indicator">
+    <span>Scroll to explore</span>
+    <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+  </div>
+</section>
+
+<!-- ===== QUICK ENQUIRY WIDGET (Slide-in) ===== -->
+<div class="tracking-widget" id="trackingWidget">
+  <button class="tracking-toggle" id="trackingToggle">
+    <i class="fas fa-envelope"></i> Enquire
+  </button>
+  <div class="tracking-panel">
+    <h3><i class="fas fa-comments"></i> Quick Enquiry</h3>
+    <p>Send us a message and we'll respond within 24 hours.</p>
+    <div class="tracking-form" style="flex-direction:column;">
+      <input type="text" id="enquiryName" placeholder="Your Name" class="tracking-input">
+      <input type="email" id="enquiryEmail" placeholder="Your Email" class="tracking-input">
+      <textarea id="enquiryMessage" rows="3" placeholder="Your message..." class="tracking-input" style="resize:none;"></textarea>
+      <button id="enquirySubmit" class="btn btn-primary btn-sm" style="width:100%;justify-content:center;">Send Enquiry</button>
+    </div>
+    <div class="tracking-result" id="trackingResult">
+      <p class="status-text" id="trackingStatusText" style="text-align:center;color:var(--gold);">We're here to help!</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== ABOUT SECTION ===== -->
+<section id="about" class="section about-section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">About Us</span>
+      <h2 class="section-title">Building Sierra Leone's <span class="highlight">Future</span></h2>
+      <p class="section-desc">Registered in Sierra Leone, CRIMSON TRADING COMPANY LIMITED is a multi-sector powerhouse driving development through media, tourism, agriculture, trade, and technology.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card" data-aos="fade-right">
+        <div class="about-card-icon"><i class="fas fa-eye"></i></div>
+        <h3>Our Vision</h3>
+        <p>To be Sierra Leone's most trusted and innovative conglomerate — catalysing economic growth, empowering communities, and setting new standards across every sector we serve.</p>
+      </div>
+      <div class="about-card" data-aos="fade-up">
+        <div class="about-card-icon"><i class="fas fa-bullseye"></i></div>
+        <h3>Our Mission</h3>
+        <p>To deliver world-class multi-media production, tourism, agriculture, procurement, ICT, and sales promotion services that drive measurable impact for Sierra Leone and beyond.</p>
+      </div>
+      <div class="about-card" data-aos="fade-left">
+        <div class="about-card-icon"><i class="fas fa-handshake"></i></div>
+        <h3>Our Promise</h3>
+        <p>Every engagement is a partnership. We combine local expertise with global standards to deliver excellence, integrity, and sustainable value for our clients and communities.</p>
+      </div>
+    </div>
+
+    <div class="timeline" data-aos="fade-up" data-aos-delay="200">
+      <h3 class="timeline-title"><i class="fas fa-timeline"></i> Our Journey</h3>
+      <div class="timeline-track">
+        <div class="timeline-item active">
+          <div class="timeline-year">2009</div>
+          <div class="timeline-content">
+            <h4>Founded in Sierra Leone</h4>
+            <p>CRIMSON TRADING COMPANY LIMITED established with a vision to transform Sierra Leone's business landscape.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2013</div>
+          <div class="timeline-content">
+            <h4>Media & Communications Launch</h4>
+            <p>Entered multi-media production and TV broadcasting, becoming a leading voice in Sierra Leone's media space.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2016</div>
+          <div class="timeline-content">
+            <h4>Diversification</h4>
+            <p>Expanded into tourism, agriculture, and fisheries — creating jobs and driving economic growth across the regions.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2020</div>
+          <div class="timeline-content">
+            <h4>Procurement & ICT Expansion</h4>
+            <p>Launched procurement, office equipment supply, and ICT services — supporting government and private sector digital transformation.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2025</div>
+          <div class="timeline-content">
+            <h4>National Leader</h4>
+            <p>7+ integrated business sectors, 300+ projects delivered, and a commitment to driving Sierra Leone's sustainable development.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+<!-- ===== SERVICES SECTION ===== -->
+<section id="services" class="section services-section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Our Sectors</span>
+      <h2 class="section-title">Integrated <span class="highlight">Business Solutions</span></h2>
+      <p class="section-desc">Seven synergistic sectors working together to drive Sierra Leone's economic transformation and create lasting impact.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card" data-aos="flip-up" data-aos-delay="100">
+        <div class="service-icon"><i class="fas fa-video"></i></div>
+        <h3>Multi-Media Production & TV</h3>
+        <p>End-to-end media production services — TV broadcasting, content creation, documentary film-making, and digital media. Telling Sierra Leone's stories to the world.</p>
+        <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        <div class="service-flow">
+          <div class="flow-node">Concept</div>
+          <div class="flow-line"></div>
+          <div class="flow-node">Produce</div>
+          <div class="flow-line"></div>
+          <div class="flow-node">Broadcast</div>
+          <div class="flow-line"></div>
+          <div class="flow-node">Distribute</div>
+        </div>
+      </div>
+
+      <div class="service-card" data-aos="flip-up" data-aos-delay="200">
+        <div class="service-icon"><i class="fas fa-umbrella-beach"></i></div>
+        <h3>Tourism & Hospitality</h3>
+        <p>Showcasing Sierra Leone's natural beauty — eco-tourism, hospitality management, travel services, and cultural tourism experiences that attract global visitors.</p>
+        <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        <div class="service-routes">
+          <i class="fas fa-hotel"></i>
+          <i class="fas fa-route"></i>
+          <i class="fas fa-umbrella-beach"></i>
+          <i class="fas fa-tree"></i>
+        </div>
+      </div>
+
+      <div class="service-card" data-aos="flip-up" data-aos-delay="300">
+        <div class="service-icon"><i class="fas fa-tractor"></i></div>
+        <h3>Agriculture & Fisheries</h3>
+        <p>Sustainable farming, fisheries management, and agribusiness solutions. Supporting local farmers, improving food security, and developing value-added agricultural exports.</p>
+        <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        <div class="service-stats-mini">
+          <span>Sustainable Farming</span>
+          <span>Fisheries Mgmt</span>
+          <span>Agri-Exports</span>
+        </div>
+      </div>
+
+      <div class="service-card" data-aos="flip-up" data-aos-delay="400">
+        <div class="service-icon"><i class="fas fa-shopping-cart"></i></div>
+        <h3>Procurement & Office Equipment</h3>
+        <p>Reliable procurement services for government, private sector, and NGOs. Office equipment supply, furniture, IT hardware, and corporate consumables.</p>
+        <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        <div class="service-steps">
+          <div class="step"><span>1</span> Source</div>
+          <div class="step"><span>2</span> Procure</div>
+          <div class="step"><span>3</span> Deliver</div>
+          <div class="step"><span>4</span> Support</div>
+        </div>
+      </div>
+
+      <div class="service-card" data-aos="flip-up" data-aos-delay="500">
+        <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
+        <h3>Sales Promotion & Marketing</h3>
+        <p>Strategic sales promotion, brand development, and marketing campaigns. Driving product visibility and market penetration for local and international brands across Sierra Leone.</p>
+        <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        <div class="service-stats-mini">
+          <span>Brand Strategy</span>
+          <span>Market Research</span>
+          <span>Campaign Mgmt</span>
+        </div>
+      </div>
+
+      <div class="service-card service-card-wide" data-aos="flip-up" data-aos-delay="600">
+        <div class="service-icon"><i class="fas fa-satellite-dish"></i></div>
+        <h3>ICT, Telecommunications & Media Development</h3>
+        <p>Delivering effective data, telecommunications, ICT infrastructure, print, electronic, and social media solutions for development. Supporting government, private sector, and civil society in Sierra Leone's digital transformation.</p>
+        <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        <div class="service-demo">
+          <div class="demo-bar">
+            <span>Digital Coverage</span>
+            <div class="demo-progress"><div class="demo-fill" style="width: 85%;"></div></div>
+            <span>85%</span>
+          </div>
+          <div class="demo-bar">
+            <span>ICT Projects Delivered</span>
+            <div class="demo-progress"><div class="demo-fill" style="width: 72%;"></div></div>
+            <span>72%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TECHNOLOGY SECTION ===== -->
+<section id="technology" class="section tech-section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Technology & Innovation</span>
+      <h2 class="section-title">Digital Transformation <span class="highlight">for Sierra Leone</span></h2>
+      <p class="section-desc">Leveraging data, telecommunications, ICTs, and media to empower government, private sector, and civil society.</p>
+    </div>
+
+    <div class="tech-showcase" data-aos="fade-up">
+      <div class="tech-dashboard">
+        <div class="dashboard-header">
+          <div class="dashboard-dots"><span></span><span></span><span></span></div>
+          <span>ICT & Media Development Dashboard — Live Demo</span>
+        </div>
+        <div class="dashboard-body">
+          <div class="dash-sidebar">
+            <div class="dash-metric">
+              <span class="dash-label">Digital Projects Active</span>
+              <span class="dash-value" id="dashShipments">24</span>
+              <span class="dash-change up"><i class="fas fa-arrow-up"></i> +3 new</span>
+            </div>
+            <div class="dash-metric">
+              <span class="dash-label">Communities Connected</span>
+              <span class="dash-value" id="dashOntime">156</span>
+              <span class="dash-change up"><i class="fas fa-arrow-up"></i> +12%</span>
+            </div>
+            <div class="dash-metric">
+              <span class="dash-label">Media Reach</span>
+              <span class="dash-value">2.4<span class="dash-unit">M</span></span>
+              <span class="dash-change up"><i class="fas fa-arrow-up"></i> +18%</span>
+            </div>
+            <div class="dash-metric">
+              <span class="dash-label">Training Delivered</span>
+              <span class="dash-value">3,200<span class="dash-unit">+</span></span>
+              <span class="dash-change up"><i class="fas fa-graduation-cap"></i> This year</span>
+            </div>
+          </div>
+          <div class="dash-main">
+            <div class="dash-map-placeholder" id="dashMap">
+              <div class="dash-map-glow"></div>
+              <div class="dash-route route-1"></div>
+              <div class="dash-route route-2"></div>
+              <div class="dash-route route-3"></div>
+              <div class="dash-route route-4"></div>
+            </div>
+            <div class="dash-feed">
+              <div class="feed-item"><span class="feed-dot live"></span> ICT training completed — Freetown</div>
+              <div class="feed-item"><span class="feed-dot"></span> Media broadcast launched — Bo District</div>
+              <div class="feed-item"><span class="feed-dot live"></span> Telecom infrastructure — Kenema</div>
+              <div class="feed-item"><span class="feed-dot"></span> Digital literacy program — Makeni</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tech-grid">
+      <div class="tech-card" data-aos="fade-up" data-aos-delay="100">
+        <i class="fas fa-broadcast-tower tech-card-icon"></i>
+        <h3>Telecommunications & ICT Infrastructure</h3>
+        <p>Building Sierra Leone's digital backbone — broadband connectivity, data center solutions, and last-mile ICT deployment for underserved communities.</p>
+      </div>
+      <div class="tech-card" data-aos="fade-up" data-aos-delay="200">
+        <i class="fas fa-newspaper tech-card-icon"></i>
+        <h3>Print, Electronic & Social Media</h3>
+        <p>Comprehensive media solutions including print publishing, electronic broadcasting, and social media strategy for development communication and public engagement.</p>
+        <div class="eco-meter">
+          <div class="eco-fill" style="width: 78%;"></div>
+          <span>78% National Coverage</span>
+        </div>
+      </div>
+      <div class="tech-card" data-aos="fade-up" data-aos-delay="300">
+        <i class="fas fa-chart-line tech-card-icon"></i>
+        <h3>Data for Development</h3>
+        <p>Effective data collection, analysis, and reporting solutions for government, private sector, and civil society — enabling evidence-based decision-making.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GLOBAL REACH SECTION ===== -->
+<section id="global" class="section global-section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Global Reach</span>
+      <h2 class="section-title">From Sierra Leone <span class="highlight">to the World</span></h2>
+      <p class="section-desc">Strategically positioned in West Africa, connecting local enterprise with global markets through trade, media, and technology.</p>
+    </div>
+
+    <div class="map-container" data-aos="fade-up">
+      <div id="worldMap"></div>
+      <div class="map-hubs">
+        <div class="hub" data-city="Freetown" style="top: 55%; left: 48%;">
+          <span class="hub-dot"></span>
+          <span class="hub-label">Freetown — HQ</span>
+        </div>
+        <div class="hub" data-city="Accra" style="top: 54%; left: 50%;">
+          <span class="hub-dot"></span>
+          <span class="hub-label">Accra</span>
+        </div>
+        <div class="hub" data-city="London" style="top: 33%; left: 50%;">
+          <span class="hub-dot"></span>
+          <span class="hub-label">London</span>
+        </div>
+        <div class="hub" data-city="Dubai" style="top: 48%; left: 58%;">
+          <span class="hub-dot"></span>
+          <span class="hub-label">Dubai</span>
+        </div>
+        <div class="hub" data-city="New York" style="top: 32%; left: 28%;">
+          <span class="hub-dot"></span>
+          <span class="hub-label">New York</span>
+        </div>
+        <div class="hub" data-city="Beijing" style="top: 38%; left: 73%;">
+          <span class="hub-dot"></span>
+          <span class="hub-label">Beijing</span>
+        </div>
+        <div class="hub" data-city="Nairobi" style="top: 60%; left: 57%;">
+          <span class="hub-dot"></span>
+          <span class="hub-label">Nairobi</span>
+        </div>
+        <div class="hub" data-city="Johannesburg" style="top: 68%; left: 56%;">
+          <span class="hub-dot"></span>
+          <span class="hub-label">Johannesburg</span>
+        </div>
+      </div>
+      <svg class="map-routes" viewBox="0 0 1000 500" preserveAspectRatio="none">
+        <path class="route-line" d="M480,275 L500,165 L280,160" />
+        <path class="route-line" d="M480,275 L580,240 L730,190" />
+        <path class="route-line" d="M480,275 L500,165 L520,175 L680,310" />
+        <path class="route-line" d="M480,275 L570,300 L550,290" />
+        <path class="route-line" d="M480,275 L560,340 L680,310" />
+      </svg>
+    </div>
+
+    <div class="testimonials" data-aos="fade-up">
+      <h3 class="section-subtitle">Trusted by Leaders</h3>
+      <div class="testimonial-carousel" id="testimonialCarousel">
+        <div class="testimonial-track">
+          <div class="testimonial-card">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"Crimson Trading's multi-media production transformed how we communicate our development impact. Their professionalism and creativity are world-class."</p>
+            <div class="testimonial-author">
+              <i class="fas fa-building"></i>
+              <div><strong>Dr. Amara Bockarie</strong><span>UNDP Sierra Leone</span></div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"Their procurement and logistics support was instrumental in our nationwide education initiative. Reliable, efficient, and deeply committed to Sierra Leone."</p>
+            <div class="testimonial-author">
+              <i class="fas fa-building"></i>
+              <div><strong>Hannah Williams</strong><span>Country Director, Save the Children SL</span></div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"Crimson's ICT infrastructure projects have connected our rural communities in ways we never thought possible. True partners in digital development."</p>
+            <div class="testimonial-author">
+              <i class="fas fa-building"></i>
+              <div><strong>Samuel Konteh</strong><span>Permanent Secretary, Ministry of Comm. & ICT</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn prev" id="testPrev"><i class="fas fa-chevron-left"></i></button>
+          <div class="carousel-dots">
+            <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+          <button class="carousel-btn next" id="testNext"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="partners" data-aos="fade-up">
+      <h3 class="section-subtitle">Our Partners</h3>
+      <div class="partner-logos">
+        <div class="partner-logo"><i class="fas fa-building"></i> <span>UNDP Sierra Leone</span></div>
+        <div class="partner-logo"><i class="fas fa-broadcast-tower"></i> <span>SLBC</span></div>
+        <div class="partner-logo"><i class="fas fa-leaf"></i> <span>Min. of Agriculture</span></div>
+        <div class="partner-logo"><i class="fas fa-graduation-cap"></i> <span>Save the Children</span></div>
+        <div class="partner-logo"><i class="fas fa-laptop"></i> <span>Min. of Comm. & ICT</span></div>
+        <div class="partner-logo"><i class="fas fa-globe"></i> <span>AfriConnect</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ===== CONTACT SECTION ===== -->
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Contact Us</span>
+      <h2 class="section-title">Let's Build <span class="highlight">Together</span></h2>
+      <p class="section-desc">Whether you need media production, procurement, tourism partnership, or ICT solutions — we're ready to serve.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info" data-aos="fade-right">
+        <div class="contact-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <h4>Registered Office</h4>
+          <p>35 Dundas Street, Freetown<br>Sierra Leone, West Africa</p>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-phone-alt"></i>
+          <h4>Phone</h4>
+          <p><a href="tel:+23231663767">+232 31 663 767</a></p>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <h4>Email</h4>
+          <p><a href="mailto:Crimsonctc@gmail.com">Crimsonctc@gmail.com</a></p>
+        </div>
+        <div class="contact-card">
+          <i class="fab fa-whatsapp"></i>
+          <h4>WhatsApp</h4>
+          <p><a href="https://wa.me/23231663767">+232 31 663 767</a></p>
+        </div>
+      </div>
+
+      <div class="contact-form-wrapper" data-aos="fade-left">
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">Your Name</label>
+              <input type="text" id="contactName" required placeholder="Your full name">
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email Address</label>
+              <input type="email" id="contactEmail" required placeholder="you@example.com">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <select id="contactSubject">
+                <option>General Inquiry</option>
+                <option>Media & TV Services</option>
+                <option>Tourism Partnership</option>
+                <option>Agriculture & Fisheries</option>
+                <option>Procurement & Equipment</option>
+                <option>ICT & Telecommunications</option>
+                <option>Sales Promotion</option>
+
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contactPhone">Phone</label>
+              <input type="tel" id="contactPhone" placeholder="+232 00 000 000">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" rows="5" required placeholder="Tell us how we can help you..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-success" id="contactSuccess">
+            <i class="fas fa-check-circle"></i> Thank you! We'll respond within 24 hours.
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="office-locator" data-aos="fade-up">
+      <h3 class="section-subtitle">Our Offices</h3>
+      <div class="office-grid">
+        <div class="office-card">
+          <i class="fas fa-building"></i>
+          <h4>Freetown — HQ</h4>
+          <p>35 Dundas Street<br>Freetown, Sierra Leone</p>
+          <span class="office-hours">Mon-Fri 08:00-17:00</span>
+        </div>
+    
+          
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <i class="fas fa-globe-americas"></i>
+          <span>CRIMSON<span>TRADING</span></span>
+        </div>
+        <p>Registered in Sierra Leone. Driving national development through multi-media, tourism, agriculture, procurement, ICT, and sales promotion.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#technology">Technology</a></li>
+          <li><a href="#global">Global Reach</a></li>
+
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Our Sectors</h4>
+        <ul>
+          <li><a href="#">Multi-Media & TV</a></li>
+          <li><a href="#">Tourism & Hospitality</a></li>
+          <li><a href="#">Agriculture & Fisheries</a></li>
+          <li><a href="#">Procurement & Equipment</a></li>
+          <li><a href="#">ICT & Telecommunications</a></li>
+          <li><a href="#">Sales & Promotion</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h4>Stay Connected</h4>
+        <p>Subscribe for updates on our projects, impact stories, and partnership opportunities.</p>
+        <form id="newsletterForm">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit"><i class="fas fa-arrow-right"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 CRIMSON TRADING COMPANY LIMITED. All rights reserved. Registered in Sierra Leone.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== BACK TO TOP ===== -->
+<button id="backToTop" aria-label="Back to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- ===== SCRIPTS ===== -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
